@@ -18,10 +18,6 @@ nvm use stable
 # http://jshint.com/
 npm install -g jshint
 
-# Install rlwrap to provide libreadline features with node
-# See: http://nodejs.org/api/repl.html#repl_repl
-sudo yum -y install rlwrap
-
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles_centos6/ ]; then
