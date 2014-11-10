@@ -7,14 +7,11 @@ follows:
 ```sh
 cd $HOME
 sudo yum -y install git
-git clone https://github.com/barnkob/setup_centos6.git
+git clone https://github.com/barnkob/setup_centos6.git -b nodejsenv
 ./setup_centos6/setup.sh   
 ```
 
-See also http://github.com/startup-class/dotfiles and
-[Startup Engineering Video Lectures 4a/4b](https://class.coursera.org/startup-001/lecture/index)
-for more details.
-
+This will clone the nodejsenv branch and set up the box for using nvm and node.
 
 
 
