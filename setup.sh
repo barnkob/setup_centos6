@@ -5,6 +5,23 @@
 # Install emacs, mc, screen
 sudo yum -y install emacs mc screen
 
+# Install nvm: node-version manager
+# https://github.com/creationix/nvm
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.18.0/install.sh | bash
+
+# Load nvm and install latest production node
+source $HOME/.nvm/nvm.sh
+nvm install stable
+nvm use stable
+
+# Install jshint to allow checking of JS code within emacs
+# http://jshint.com/
+npm install -g jshint
+
+# Install rlwrap to provide libreadline features with node
+# See: http://nodejs.org/api/repl.html#repl_repl
+sudo yum -y install rlwrap
+
 # git pull and install dotfiles as well
 cd $HOME
 if [ -d ./dotfiles_centos6/ ]; then
