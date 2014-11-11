@@ -30,7 +30,7 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.com/barnkob/dotfiles_centos6.git
+git clone https://github.com/barnkob/dotfiles_centos6.git -b nodejsenv
 
 ln -sb dotfiles_centos6/.screenrc .
 ln -sb dotfiles_centos6/.bash_profile .
